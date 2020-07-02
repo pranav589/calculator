@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+  <title> Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!--<div class="bg"></div>-->
+  <form class="main">
+    <div class="heading">
+      <span><i class="fas fa-bars"></i></span>
+      <span>Calculator</span>
+      <span><i class="fas fa-magic"></i></span>
+    </div>
+    <div id="result">
+      <input type="text" id="output-value" name="display">
+    </div>
+    <div id="keyboard">
+      <div class="group">
+        <div class="most-section">
+          <input type="button" name="btnLeft" value="(" class="operator" onclick="myclick('(')" id="left">
+          <input type="button" name="btnRight" value=")" class="operator" onclick="myclick(')')" id="right">
+          <input type="button" class="operator" id="cube" name="btnCube" value="x³" onclick="funcCube()">
+          <input type="button" class="operator" id="sqRoot" value="√" name="btnRoot" onclick="funcRoot()">
+        </div>
+        <div class="more-section">
+          <input type="button" name="btnSin" value="sin" class="operator" onclick="funcSin()" id="sin">
+          <input type="button" name="btnCos" value="cos" class="operator" onclick="funcCos()" id="cos">
+          <input type="button" class="operator" id="tan" name="btnTan" value="tan" onclick="funcTan()">
+          <input type="button" class="operator" id="square" value="x²" name="btnSq" onclick="sq()">
+        </div>
+        <div class="top-section">
+          <input type="button" class="operator" id="clear" value="AC" name="btnClear" onclick="allClear()">
+          <input type="button" class="operator" id="backspace" value='C' onclick="back()">
+          <input type="button" class="operator" id="%" value="%" onclick="percent()">
+        </div>
+        <div class="middle-section">
+          <div>
+            <input type="button" class="number" id="7" value="7" name="btn7" onclick="myclick('7')">
+            <input type="button" class="number" id="8" value="8" name="btn8" onclick="myclick('8')">
+            <input type="button" class="number" id="9" value="9" name="btn9" onclick="myclick('9')">
+          </div>
+          <div>
+            <input type="button" class="number" id="4" value="4" name="btn4" onclick="myclick('4')">
+            <input type="button" class="number" id="5" value="5" name="btn5" onclick="myclick('5')">
+            <input type="button" class="number" id="6" value="6" name="btn6" onclick="myclick('6')">
+          </div>
+          <div>
+            <input type="button" class="number" id="1" value="1" name="btn1" onclick="myclick('1')">
+            <input type="button" class="number" id="2" value="2" name="btn2" onclick="myclick('2')">
+            <input type="button" class="number" id="3" value="3" name="btn3" onclick="myclick('3')">
+          </div>
+          <div>
+            <input type="button" class="number" id="00" value="00" name="btn00" onclick="myclick('00')"></td>
+            <input type="button" class="number" id="0" value="0" name="btn0" onclick="myclick('0')"></td>
+            <input type="button" class="number" id="." value="." name="btn." onclick="myclick('.')"></td>
+          </div>
+        </div>
+      </div>
+      <div class="side-section">
+        <input type="button" class="operator" id="/" value="/" name="btn/" onclick="myclick('/')">
+        <input type="button" class="operator" id="*" value="*" name="btn*" onclick="myclick('*')">
+        <input type="button" class="operator" id="-" value="-" name="btn-" onclick="myclick('-')">
+        <input type="button" class="operator" id="+" value="+" name="btn+" onclick="myclick('+')">
+        <input type="button" class="operator" id="=" value="=" name="btn=" onclick="output()">
+      </div>
+    </div>
+  </form>
+  <script src="main.js"></script>
+</body>
+
+</html>
