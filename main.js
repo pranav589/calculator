@@ -22,15 +22,15 @@ function percent() {
 }
 
 function funcSin() {
-  op.value = Math.sin(op.value);
+  op.value = Math.sin(op.value*Math.PI/180);
 }
 
 function funcCos() {
-  op.value = Math.cos(op.value);
+  op.value = Math.cos(op.value*Math.PI/180);
 }
 
 function funcTan() {
-  op.value = Math.tan(op.value);
+  op.value = Math.tan(op.value*Math.PI/180);
 }
 
 function sq() {
